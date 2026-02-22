@@ -1,53 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add 50 laws of Indian Constitution with complete explanations",
+  "title": "Add 'devansh shukla 6B AF PANCHWATI' to front page",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Populate the application with 50 comprehensive Indian Constitution laws including complete explanations",
+      "id": "REQ-16",
+      "summary": "Add the text 'devansh shukla 6B AF PANCHWATI' prominently to the LawsPage above the laws list",
       "acceptanceCriteria": [
-        "All 50 laws display in the law list with their numbers and titles",
-        "Each law detail page shows the complete explanation when clicked",
-        "Search functionality works across all 50 laws",
-        "The existing 51st law (Preamble) remains intact and functional",
-        "Burgundy and gold legal theme styling is preserved throughout"
+        "The text 'devansh shukla 6B AF PANCHWATI' is displayed on the front page (LawsPage)",
+        "The text is clearly visible and positioned prominently",
+        "The text styling is consistent with the app's burgundy and gold legal theme"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/data/initialLaws.ts",
-          "operation": "create",
-          "description": "Create a data file containing all 50 Indian Constitution laws with their numbers, titles, and complete explanations. Structure as an array of tuples matching the backend initializeLaws parameter format: [title: string, number: bigint, explanation: string][]. Ensure law numbers are unique and sequential. Include comprehensive explanations for each law covering its purpose, scope, and significance in the Indian Constitution."
-        },
-        {
-          "path": "frontend/src/hooks/useInitializeLaws.ts",
-          "operation": "create",
-          "description": "Create a custom hook that uses React Query's useMutation to call the backend initializeLaws method with the data from initialLaws.ts. This hook should handle loading states, error handling, and success callbacks. Import the initialLaws data and convert number values to BigInt before sending to the backend."
-        },
-        {
-          "path": "frontend/src/components/LawInitializer.tsx",
-          "operation": "create",
-          "description": "Create a component that triggers law initialization on first app load. Use the useInitializeLaws hook and check if laws already exist using useAllLaws query. Display a subtle initialization status indicator during the process. Ensure this component runs once and doesn't reinitialize on subsequent visits. Style consistently with the burgundy/gold legal theme."
-        },
-        {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/pages/LawsPage.tsx",
           "operation": "modify",
-          "description": "Add the LawInitializer component to the application root, ensuring it runs before the main router content. Place it as a sibling to the RouterProvider so initialization happens on app mount. Maintain existing routing structure and Layout configuration."
-        },
-        {
-          "path": "frontend/src/components/LawList.tsx",
-          "operation": "modify",
-          "description": "Verify the component correctly handles the expanded dataset of 50 laws. Ensure the scrollable list performs well with the larger dataset. Confirm the filtered law count displays accurately. No visual or functional changes needed if existing implementation already supports the data volume."
-        },
-        {
-          "path": "frontend/src/components/LawListItem.tsx",
-          "operation": "modify",
-          "description": "Review text truncation for law titles and explanations to ensure they display correctly with potentially longer content from the 50 laws. Adjust truncation limits if necessary while maintaining the card layout and burgundy/gold styling."
-        },
-        {
-          "path": "frontend/src/hooks/useLawFilter.ts",
-          "operation": "modify",
-          "description": "Verify the filtering logic performs efficiently with 50 laws. Ensure search matches work correctly across titles, numbers, and the comprehensive explanations. Optimize filtering algorithm if performance issues arise with the larger dataset."
+          "description": "Add a prominent text section displaying 'devansh shukla 6B AF PANCHWATI' above the LawList component. Style the text using the existing burgundy and gold theme colors (text-burgundy-700 or text-gold-600) with appropriate sizing (text-2xl or text-3xl) and spacing (mb-6 or mb-8). Position it after the page header but before the LawList component to ensure visibility. Preserve all existing layout structure and laws list functionality."
         }
       ]
     }

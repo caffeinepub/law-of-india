@@ -1,20 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Add 50 laws of Indian Constitution with complete explanations",
-  "projectName": "Indian Constitution Laws",
+  "title": "Add 'devansh shukla 6B AF PANCHWATI' to front page",
   "priority": "normal",
-  "requirements": [],
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "text": "Add the text 'devansh shukla 6B AF PANCHWATI' to the front page (LawsPage) of the application in a prominent, visible location above or near the laws list",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "Add devansh shukla 6B AF PANCHWATI to front page of my app"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The text 'devansh shukla 6B AF PANCHWATI' is displayed on the front page (LawsPage)",
+        "The text is clearly visible and positioned prominently",
+        "The text styling is consistent with the app's burgundy and gold legal theme"
+      ]
+    }
+  ],
   "constraints": [
-    "Do not modify existing frontend immutable paths: useInternetIdentity.ts, useInternetIdentity.tsx, useActor.ts, main.tsx, and components/ui",
-    "Maintain single-actor architecture in backend/main.mo",
-    "Preserve existing burgundy and gold legal theme styling",
-    "Keep the existing 51-law capacity and preamble functionality intact"
+    "Preserve the existing burgundy and gold color scheme",
+    "Do not modify the laws list functionality or existing layout structure",
+    "Do not change backend data structures or logic"
   ],
   "nonGoals": [
-    "Adding more than 50 laws beyond the existing 51st law",
-    "Changing the visual theme or design aesthetic",
-    "Modifying the search and filter functionality",
-    "Altering the law detail view structure"
+    "Adding this text to other pages besides the front page",
+    "Making the text interactive or clickable",
+    "Creating a new backend data model for this text"
   ],
   "imageRequirements": {
     "required": [],

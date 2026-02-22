@@ -8,9 +8,16 @@ export default function LawsPage() {
           Indian Legal Compendium
         </h2>
         <p className="text-muted-foreground font-serif text-lg">
-          Browse through 50 fundamental laws that govern the Republic of India
+          Browse through 99 fundamental laws that govern the Republic of India
         </p>
       </div>
+      
+      <div className="mb-8 text-center">
+        <p className="text-3xl font-serif font-semibold text-burgundy-700">
+          devansh shukla 6B AF PANCHWATI
+        </p>
+      </div>
+      
       <LawList />
     </div>
   );

@@ -2,13 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-backend-data-structure-in-motoko-to-store-exactly-50-laws-each-with-a-title-law-number-identifier-and-complete-explanation-text",
-      "featureTitle": "Create a backend data structure in Motoko to store exactly 50 laws, each with a title, law number/identifier, and complete explanation text",
+      "featureId": "feature-add-the-text-devansh-shukla-6b-af-panchwati-to-the-front-page-lawspage-of-the-application-in-a-prominent-visible-location-above-or-near-the-laws-list",
+      "featureTitle": "Add the text 'devansh shukla 6B AF PANCHWATI' to the front page (LawsPage) of the application in a prominent, visible location above or near the laws list",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/LawInitializer.tsx",
-        "frontend/src/data/initialLaws.ts",
-        "frontend/src/hooks/useInitializeLaws.ts"
+        "frontend/src/pages/LawsPage.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -18,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-1"
+        "REQ-16"
       ],
       "confidence": "high"
     }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 7,
-  "summary": "An app displaying 51 laws and the preamble of the Indian Constitution with complete explanations",
+  "projectStateVersion": 11,
+  "summary": "An app displaying 99 articles and the preamble of the Indian Constitution with complete explanations",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
@@ -51,6 +51,30 @@
       "title": "Create a backend data structure in Motoko to store exactly 50 laws, each with a title, law number/identifier, and complete explanation text",
       "reqIds": [
         "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-48-new-indian-constitution-articles-to-the-initiallaws-ts-data-file-each-containing-an-article-number-complete-title-and-comprehensive-explanation-covering-the-article-s-constitutional-provisions",
+      "title": "Add 48 new Indian Constitution articles to the initialLaws.ts data file, each containing an article number, complete title, and comprehensive explanation covering the article's constitutional provisions",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-all-frontend-references-to-law-count-from-50-or-51-to-99-including-the-lawspage-header-text-and-any-count-displays-in-the-lawlist-component",
+      "title": "Update all frontend references to law count from 50 or 51 to 99, including the LawsPage header text and any count displays in the LawList component",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-text-devansh-shukla-6b-af-panchwati-to-the-front-page-lawspage-of-the-application-in-a-prominent-visible-location-above-or-near-the-laws-list",
+      "title": "Add the text 'devansh shukla 6B AF PANCHWATI' to the front page (LawsPage) of the application in a prominent, visible location above or near the laws list",
+      "reqIds": [
+        "REQ-16"
       ],
       "version": 1
     }
@@ -112,6 +136,34 @@
       "reqIds": [
         "REQ-11"
       ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add 48 additional articles with complete explanations to the existing 51 articles",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Update the backend data structure to accommodate a total of 99 articles (currently 51 articles exist, add 48 more) by modifying the maximum storage limit from 51 to 99",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Update the LawInitializer component to initialize all 99 articles on first app load instead of the current 50",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Add 'devansh shukla 6B AF PANCHWATI' text to the front page of the app",
+      "reqIds": [],
       "status": "pending"
     }
   ],

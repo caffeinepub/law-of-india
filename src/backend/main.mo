@@ -1,9 +1,10 @@
-import Map "mo:core/Map";
-import Nat "mo:core/Nat";
 import List "mo:core/List";
+import Nat "mo:core/Nat";
 import Array "mo:core/Array";
 import Runtime "mo:core/Runtime";
 import Order "mo:core/Order";
+
+
 
 actor {
   public type Law = {
@@ -37,8 +38,8 @@ actor {
       count;
     };
 
-    if (laws.size() == 51 and countLawNumber(51) == 1) {
-      Runtime.trap("Cannot add more than 51 laws. ");
+    if (laws.size() == 99 and countLawNumber(99) == 1) {
+      Runtime.trap("Cannot add more than 99 laws. ");
     };
 
     let law = {
@@ -74,8 +75,8 @@ actor {
       Runtime.trap("Laws have already been initialized");
     };
 
-    if (initialLaws.size() != 51) {
-      Runtime.trap("Initial laws must contain exactly 51 entries");
+    if (initialLaws.size() != 99) {
+      Runtime.trap("Initial laws must contain exactly 99 entries");
     };
 
     laws := List.empty<Law>();
