@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        --background: 0.98 0.01 40;
+        --foreground: 0.20 0.02 20;
+        --card: 1 0 0;
+        --card-foreground: 0.20 0.02 20;
+        --popover: 1 0 0;
+        --popover-foreground: 0.20 0.02 20;
+        --primary: 0.40 0.08 20;
+        --primary-foreground: 0.98 0.05 45;
+        --secondary: 0.95 0.01 40;
+        --secondary-foreground: 0.30 0.02 20;
+        --muted: 0.95 0.01 40;
+        --muted-foreground: 0.50 0.02 20;
+        --accent: 0.95 0.01 40;
+        --accent-foreground: 0.30 0.02 20;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.90 0.01 40;
+        --input: 0.90 0.01 40;
+        --ring: 0.65 0.08 45;
+        --chart-1: 0.646 0.222 41.116;
+        --chart-2: 0.6 0.118 184.704;
+        --chart-3: 0.398 0.07 227.392;
+        --chart-4: 0.828 0.189 84.429;
+        --chart-5: 0.769 0.188 70.08;
+        --burgundy: 0.35 0.10 15;
+        --gold: 0.75 0.12 75;
+    }
+
+    .dark {
+        --background: 0.18 0.02 20;
+        --foreground: 0.95 0.01 40;
+        --card: 0.22 0.02 20;
+        --card-foreground: 0.95 0.01 40;
+        --popover: 0.25 0.02 20;
+        --popover-foreground: 0.95 0.01 40;
+        --primary: 0.85 0.02 40;
+        --primary-foreground: 0.25 0.02 20;
+        --secondary: 0.28 0.02 20;
+        --secondary-foreground: 0.95 0.01 40;
+        --muted: 0.28 0.02 20;
+        --muted-foreground: 0.65 0.02 30;
+        --accent: 0.35 0.03 25;
+        --accent-foreground: 0.95 0.01 40;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.25 0.02 20;
+        --border: 0.30 0.02 20;
+        --input: 0.32 0.02 20;
+        --ring: 0.55 0.05 35;
+        --chart-1: 0.488 0.243 264.376;
+        --chart-2: 0.696 0.17 162.48;
+        --chart-3: 0.769 0.188 70.08;
+        --chart-4: 0.627 0.265 303.9;
+        --chart-5: 0.645 0.246 16.439;
+        --burgundy: 0.45 0.12 15;
+        --gold: 0.75 0.12 75;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: Georgia, 'Times New Roman', serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia, 'Times New Roman', serif;
+    }
+}
+
+@layer utilities {
+    .legal-bg-overlay {
+        background-image: url('/assets/generated/legal-bg.dim_1920x1080.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        opacity: 0.03;
+        z-index: 0;
+    }
+
+    .bg-burgundy {
+        background-color: oklch(var(--burgundy));
+    }
+
+    .text-burgundy {
+        color: oklch(var(--burgundy));
+    }
+
+    .border-burgundy {
+        border-color: oklch(var(--burgundy));
+    }
+
+    .bg-gold {
+        background-color: oklch(var(--gold));
+    }
+
+    .text-gold {
+        color: oklch(var(--gold));
+    }
+
+    .border-gold {
+        border-color: oklch(var(--gold));
+    }
+
+    .hover\:bg-burgundy:hover {
+        background-color: oklch(var(--burgundy));
+    }
+
+    .hover\:text-gold:hover {
+        color: oklch(var(--gold));
+    }
+
+    .hover\:border-gold:hover {
+        border-color: oklch(var(--gold));
+    }
+}

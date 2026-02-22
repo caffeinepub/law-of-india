@@ -1,0 +1,23 @@
+{
+  "kind": "build_request",
+  "title": "Add 50 laws of Indian Constitution with complete explanations",
+  "projectName": "Indian Constitution Laws",
+  "priority": "normal",
+  "requirements": [],
+  "constraints": [
+    "Do not modify existing frontend immutable paths: useInternetIdentity.ts, useInternetIdentity.tsx, useActor.ts, main.tsx, and components/ui",
+    "Maintain single-actor architecture in backend/main.mo",
+    "Preserve existing burgundy and gold legal theme styling",
+    "Keep the existing 51-law capacity and preamble functionality intact"
+  ],
+  "nonGoals": [
+    "Adding more than 50 laws beyond the existing 51st law",
+    "Changing the visual theme or design aesthetic",
+    "Modifying the search and filter functionality",
+    "Altering the law detail view structure"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

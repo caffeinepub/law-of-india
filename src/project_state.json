@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "An app displaying 51 laws and the preamble of the Indian Constitution with complete explanations",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-frontend-interface-displaying-all-50-laws-in-a-browsable-list-view-showing-law-titles-and-identifiers",
+      "title": "Create a frontend interface displaying all 50 laws in a browsable list view showing law titles and identifiers",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-detailed-view-functionality-where-clicking-on-a-law-displays-its-complete-explanation-in-a-readable-format",
+      "title": "Implement detailed view functionality where clicking on a law displays its complete explanation in a readable format",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-search-or-filter-functionality-to-help-users-find-specific-laws-among-the-50-entries",
+      "title": "Add search or filter functionality to help users find specific laws among the 50 entries",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-cohesive-visual-theme-with-a-professional-legal-aesthetic-using-deep-burgundy-and-gold-accents-with-clean-serif-typography-structured-layouts-and-formal-presentation-suitable-for-legal-content",
+      "title": "Design a cohesive visual theme with a professional, legal aesthetic using deep burgundy and gold accents with clean serif typography, structured layouts, and formal presentation suitable for legal content",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-frontend-functionality-to-display-the-preamble-of-the-indian-constitution-in-a-prominent-accessible-location-with-its-complete-explanation",
+      "title": "Add frontend functionality to display the Preamble of the Indian Constitution in a prominent, accessible location with its complete explanation",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-backend-data-structure-in-motoko-to-store-exactly-50-laws-each-with-a-title-law-number-identifier-and-complete-explanation-text",
+      "title": "Create a backend data structure in Motoko to store exactly 50 laws, each with a title, law number/identifier, and complete explanation text",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Display 50 laws with complete explanations",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement backend query methods to retrieve all 50 laws and to fetch individual law details by identifier",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add one additional law (51st law) to the existing 50 laws",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add the preamble of the Indian Constitution with its explanation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Update the backend Law type and storage to accommodate the 51st law beyond the current 50-law limit",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Add the 51st law of the Indian Constitution with its complete title, identifier, and detailed explanation to the backend storage",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Create a new backend data structure to store the Preamble of the Indian Constitution with its title and complete explanation text",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Update the frontend law count display and list component to reflect 51 laws instead of 50",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "law of india",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

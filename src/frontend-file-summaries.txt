@@ -1,0 +1,19 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup and the LawInitializer component added to trigger law initialization before the router content loads.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component providing consistent header with branding, scales icon, Preamble navigation button, main content area with Outlet for routing, and footer with attribution.",
+  "frontend/src/pages/LawsPage.tsx": "Landing page component that displays the main heading and renders the LawList component for browsing all laws.",
+  "frontend/src/pages/LawDetailPage.tsx": "Detail page component that extracts the law number from route parameters and displays the LawDetail component with a back button.",
+  "frontend/src/components/LawList.tsx": "Main list component that fetches all laws, integrates search functionality, displays filtered results count, and renders scrollable list of LawListItem components.",
+  "frontend/src/components/LawListItem.tsx": "Individual law card component that displays law number, title, and preview of explanation with click navigation to detail view.",
+  "frontend/src/components/LawDetail.tsx": "Detailed law view component that fetches and displays complete law information including full explanation text formatted for readability.",
+  "frontend/src/components/LawSearch.tsx": "Search input component with clear button that filters laws by title, number, or explanation text.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including fetching laws, individual law details, preamble, and a new mutation hook for setting the preamble.",
+  "frontend/src/hooks/useLawFilter.ts": "Custom hook that filters an array of laws based on search term matching against title, number, or explanation.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining burgundy and gold theme colors, serif typography, and legal background overlay utility classes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with burgundy and gold color palettes, serif font family defaults, and custom design tokens for the legal theme.",
+  "frontend/src/components/PreambleDisplay.tsx": "Component that fetches and displays the Preamble of the Indian Constitution in a prominent card layout with burgundy and gold theme, including loading and error states.",
+  "frontend/src/pages/PreamblePage.tsx": "Page component that renders the PreambleDisplay with a descriptive header about the Preamble's significance and a back button to return to the laws list.",
+  "frontend/src/data/initialLaws.ts": "Contains an array of 50 comprehensive Indian Constitution laws with titles, numbers (as bigint), and complete explanations covering fundamental rights, directive principles, government structure, and emergency provisions.",
+  "frontend/src/hooks/useInitializeLaws.ts": "Custom React Query mutation hook that calls the backend initializeLaws method with the 50 laws data and invalidates the laws query cache on success.",
+  "frontend/src/components/LawInitializer.tsx": "Component that automatically initializes the 50 laws on first app load by checking if laws exist and triggering initialization with a subtle loading indicator during the process."
+}
